@@ -4,12 +4,7 @@ import { Button } from 'react-native-elements';
 
 export default class ReviewScreen extends Component {
   static navigationOptions = {
-    title: 'Review Jobs',
-    header: ({ navigate }) => {
-      return{
-        right: <Button title="Settings" onPress={() => navigate('settings')} />
-      };
-    }
+    title: 'Review Jobs'
   }
 
   render() {

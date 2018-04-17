@@ -26,6 +26,12 @@ export default class App extends React.Component {
               settings: { screen: SettingsScreen }
             })
           }
+        }, {
+          tabBarPosition: 'bottom',
+          swipeEnabled: false,
+          tabBarOptions: {
+            labelStyle: { fontSize: 12 }
+          }
         })
       }
     }, {
@@ -47,7 +53,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: Platform.OS === 'android' ? 24 : 0,
     flex: 1,
     backgroundColor: '#fff'
   }
